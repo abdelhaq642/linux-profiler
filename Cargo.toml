@@ -1,6 +1,24 @@
-[package]
-name = "linux-profiler"
+[workspace]
+resolver = "2"
+members = [
+    "crates/lpp-cli",
+    "crates/lpp-core",
+    "crates/lpp-perf",
+    "crates/lpp-unwind",
+    "crates/lpp-symbolize",
+    "crates/lpp-bpf",
+    "crates/lpp-store",
+    "crates/lpp-analysis",
+    "crates/lpp-server",
+]
+
+[workspace.package]
 version = "0.0.1"
 edition = "2021"
+publish = false
 
-[dependencies]
+[workspace.dependencies]
+lpp-core = { path = "crates/lpp-core" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"

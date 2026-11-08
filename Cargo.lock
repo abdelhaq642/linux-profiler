@@ -3,5 +3,61 @@
 version = 4
 
 [[package]]
-name = "linux-profiler"
+name = "lpp-analysis"
 version = "0.0.1"
+dependencies = [
+ "lpp-core",
+]
+
+[[package]]
+name = "lpp-bpf"
+version = "0.0.1"
+dependencies = [
+ "lpp-core",
+]
+
+[[package]]
+name = "lpp-cli"
+version = "0.0.1"
+dependencies = [
+ "lpp-core",
+]
+
+[[package]]
+name = "lpp-core"
+version = "0.0.1"
+
+[[package]]
+name = "lpp-perf"
+version = "0.0.1"
+dependencies = [
+ "lpp-core",
+]
+
+[[package]]
+name = "lpp-server"
+version = "0.0.1"
+dependencies = [
+ "lpp-core",
+]
+
+[[package]]
+name = "lpp-store"
+version = "0.0.1"
+dependencies = [
+ "lpp-core",
+]
+
+[[package]]
+name = "lpp-symbolize"
+version = "0.0.1"
+dependencies = [
+ "lpp-core",
+]
+
+[[package]]
+name = "lpp-unwind"
+version = "0.0.1"
+dependencies = [
+ "lpp-core",
+]
